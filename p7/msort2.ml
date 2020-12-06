@@ -63,7 +63,7 @@ let l2 = List.init 100_000 abs;;
 
 let divide' =
 	let rec bucle lo (l1, l2) = match lo with
-		[] -> (l1, l2)
+		[] -> (l2, l1)
 		|
 		h::[] -> (h::l1, l2)
 		|
