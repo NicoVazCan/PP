@@ -69,7 +69,7 @@ let divide' =
 		|
 		h1::h2::t -> bucle t (h1::l1, h2::l2)
 	in fun l
-	-> bucle (List.rev l) ([], []);;
+	-> bucle l ([], []);;
 
 let merge' f p =
 	let rec bucle po lf = match po with
